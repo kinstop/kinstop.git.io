@@ -32,6 +32,12 @@ body{
 div .header{
 	cursor: default;
 }
+#name{
+	color: #162630;
+}
+.bisi{
+	color: rgb(182, 193, 201);
+}
 .nsa a{
 	color: rgb(196, 210, 235);
 }
@@ -42,33 +48,37 @@ div .header{
 	font-weight: 700;
 	color: rgb(170, 161, 161);
 	padding: 0px 5px 0px 5px;
+	margin-bottom: auto;
 	font-size: 27px;
 	letter-spacing: 0.4mm;
-	margin: 6px;
+	/* margin: 1px 6px 1px 2px; */
 }
 .nsa:hover {
 	border-bottom: 1px solid;
 	border-radius: 3px;
 	color: rgb(173, 172, 91);
 }
-.my-logo{
+/* .my-logo{
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-size: 25px;
-	color: rgb(93, 248, 176);
-}
+	color: rgb(63, 106, 187);
+} */
 .free{
 	display: column;
 	cursor: pointer;
-	border: 1px solid;
+	/* border: 1px solid; */
 	border-color: rgb(231, 226, 226);
 	padding: 4px;
 	justify-content: center;
 }
 .hamb{
-	width: 26px;
+	display: block;
+	width: 27px;
 	height: 4px;
+	border-radius: 5px;
 	background-color: rgb(231, 226, 226);
 	margin-top: 4px;
+
 }
 .gre{
 	margin-top: 0;
@@ -90,7 +100,8 @@ ul{
 	display: flex;
 	list-style: none;
 	background-color: rgba(8, 7, 14);
-	padding: 18px;
+	padding: 5px;
+	padding-top: 13px;
 	margin-right: 0;
 	margin-left: 0;
 	justify-content: space-between;
@@ -144,10 +155,10 @@ li a{
 	color: #f6f6f6;;
 }
 .contain{
-	background-image: url('image3.jpg');
+	/* background-image: url('image3.jpg'); */
 	background-size: cover;
 	background-repeat: no-repeat;
-	/* background-image: linear-gradient(to right, #436532, #762837, #832982); */
+	background-image: linear-gradient(to bottom, #192730, #7cb6dd, #3a3985);
 	padding: 60px;
 }
 .contain .header{
@@ -161,13 +172,14 @@ li a{
 	display: flex;
 	width: fill;
 	margin: 3%;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding: 30px;
+	padding-top: 15px;
 	border-radius: 20px;
 	margin-right: 20px;
 	margin-left: 20px;
 	background-image: linear-gradient(to right,  rgba(154, 172, 204, 0.5), rgba(92, 98, 185, 0.7));
 	justify-content: space-around;
+	overflow: hidden;
 }
 .proimg{
 	padding: 4px;
@@ -223,7 +235,7 @@ li a{
 .submit{
 	border-radius: 2px;
 	border: none;
-	margin: 0.1cm 0cm 0cm 6cm;
+	margin: 0.1cm 0cm 0cm 8cm;
 	color: aliceblue;
 	cursor: pointer;
 	background-color: rgb(202, 74, 65);
@@ -305,22 +317,27 @@ footer{
 	.nsa{
 		display: none;
 	}
+	.address{
+		margin: 0px 25px 20px 25px;
+	}
+	.proimg{
+		/* width: 160px;
+		height: 210px;
+		margin: 0;
+		border: none; */
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.view{
+		margin-top: 15px;
+		padding-right: 0;
+	}
+	.products{
+		display: block;
+	}
 }
 @media (min-width: 600px) {
 	.free{
 		display: none;
-	}
-}
-@media (max-width: 600px) {
-	.address{
-		margin: 0px 25px 20px 25px;
-	}
-}
-@media (max-width: 600px) {
-	.proimg{
-		width: 160px;
-		height: 210px;
-		margin: 0;
-		border: none;
 	}
 }
